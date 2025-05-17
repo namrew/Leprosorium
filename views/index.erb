@@ -1,0 +1,13 @@
+<h2>Latests posts</h2>
+
+<% @results.each do |line| %>
+	<p>
+		<%= line['Content'] %>
+		</br></br>
+		Added at: <%= line['Created_date'] %>
+		</br>
+		<a href="/details/<%= line['id'] %>">Comments</a>
+	</br>
+	<p>
+	<hr />
+<% end %>
